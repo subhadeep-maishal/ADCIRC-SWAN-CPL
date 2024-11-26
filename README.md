@@ -9,7 +9,9 @@ make clobber
 make config
 make punswan
 make adcswan (without MPI)
-make padcswan
+make padcswan (with MPI)
+
+mpirun -np 1000 ./padcswan
  
 
 ![Figure](https://github.com/subhadeep-maishal/ADCIRC-SWAN-CPL/blob/main/git-x.PNG) 
