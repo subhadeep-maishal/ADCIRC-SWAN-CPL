@@ -1,5 +1,5 @@
 for X-MLC
-DADCSWAN for SWAN Coupling.
+"DADCSWAN" for SWAN Coupling.
 (edit cmplrflags.mk)
  DPRE          :=  -DREAL8 -DLINUX -DADCSWAN
 
