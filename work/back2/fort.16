@@ -1,0 +1,5 @@
+INFO: openFileForRead: Searching for file to open on unit 15...
+INFO: openFileForRead: The file 'fort.15' was found. The file will be opened.
+INFO: openFileForRead: The file 'fort.15' was opened successfully.
+INFO: readFort015prep: The subdomainModeling capability is not active.
+ECHO: readFort015prep:  subdomainOn= F

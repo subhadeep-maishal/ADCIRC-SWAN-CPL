@@ -1,0 +1,310 @@
+LULC                                     ! 32 CHARACTER ALPHANUMERIC RUN DESCRIP
+ANDHRA PRADESH                           ! 24 CHARACTER ALPHANUMERIC RUN IDENTIF
+1                                        ! NFOVER - NONFATAL ERROR OVERRIDE OPTI
+0                                        ! NABOUT - ABREVIATED OUTPUT OPTION PAR
+1                                        ! NSCREEN - OUTPUT TO UNIT 6 PARAMETER 
+0                                        ! IHOT - HOT START OPTION PARAMETER    
+2                                        ! ICS - COORDINATE SYSTEM OPTION PARAME
+0                                        ! IM - MODEL RUN TYPE: 0,10,20,30 = 2DD
+1                                        ! NOLIBF - NONLINEAR BOTTOM FRICTION OP
+2                                        ! NOLIFA - OPTION TO INCLUDE FINITE AMP
+0                                        ! NOLICA - OPTION TO INCLUDE CONVECTIVE
+0                                        ! NOLICAT - OPTION TO CONSIDER TIME DER
+0                                        ! NWP - Number of nodal attributes.    
+1                                        ! NCOR - VARIABLE CORIOLIS IN SPACE OPT
+1                                        ! NTIP - TIDAL POTENTIAL OPTION PARAMET
+320                                        ! NWS - WIND STRESS AND BAROMETRIC PR
+1                                        ! NRAMP - RAMP FUNCTION OPTION         
+9.81                                  ! G - ACCELERATION DUE TO GRAVITY - DETERM
+0.05000                                  ! TAU0 - WEIGHTING FACTOR IN GWCE      
+2.00000                                  ! DT - TIME STEP (IN SECONDS)          
+0.00000                                  ! STATIM - STARTING SIMULATION TIME IN 
+0.00000                                  ! REFTIME - REFERENCE TIME (IN DAYS) FO
+241 185 30.000000 77.000000 0.125000 0.125000 10800 ! NWLAT, NWLON, WLATMAX, WLO
+3.50000                                  ! RNDAY - TOTAL LENGTH OF SIMULATION (I
+1.00000                                  ! DRAMP - DURATION OF RAMP FUNCTION (IN
+0.350000 0.300000 0.350000               ! TIME WEIGHTING FACTORS FOR THE GWCE E
+0.400000 12 12 0.050000                  ! H0, NODEDRYMIN, NODEWETMIN, VELMIN - 
+83.333653 12.627362                      ! SLAM0, SFEA0 - LONGITUDE AND LATITUDE
+0.002800                                 ! FFACTOR - 2DDI BOTTOM FRICTION COEFFI
+20.000000                                ! ESLM - SPATIALLY CONSTANT HORIZONTAL 
+0.000100                                 ! CORI - CONSTANT CORIOLIS COEFFICIENT 
+1                                        ! NTIF - NUMBER OF TIDAL POTENTIAL CONS
+STEADY                                   ! TIPOTAG - NAME OF TIDAL POTENTIAL CON
+0.00000000 0.000000000000000 0.000 0.000 0.000     ! TPK, AMIGT, ETRF, FFT, FACE
+1                                        ! NBFR - NUMBER OF PERIODIC FORCING FRE
+STEADY                                   ! BOUNTAG - FORCING CONSTITUENT NAME   
+0.000000000000000 0.000 0.000                                                   
+STEADY                                   ! EALPHA - FORCING CONSTITUENT NAME AGA
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+0.000000 0.000                           ! EMO, EFA                             
+90                                       ! ANGINN - MINIMUM ANGLE FOR TANGENTIAL
+           0  0.000000000000000E+000  0.000000000000000E+000           0
+       0                                         ! NSTAE - NUMBER OF ELEVATION R
+           0  0.000000000000000E+000  0.000000000000000E+000           0
+       0                                         ! NSTAV - NUMBER OF VELOCITY RE
+           0  0.000000000000000E+000  0.000000000000000E+000           0
+       0                                         ! NSTAM - NUMBER OF METEOROLOGI
+           0  0.000000000000000E+000  0.000000000000000E+000           0
+           0  0.000000000000000E+000  0.000000000000000E+000           0
+           0  0.000000000000000E+000  0.000000000000000E+000           0
+0                                        ! NHARF - NUMBER OF FREQENCIES IN HARMO
+0.000000 0.000000 0 0.000000             ! THAS,THAF,NHAINC,FMV - HARMONIC ANALY
+0 0 0 0                                  ! NHASE,NHASV,NHAGE,NHAGV - CONTROL HAR
+0 0                                      ! NHSTAR,NHSINC - HOT START FILE GENERA
+1 0 1e-010 50                            ! ITITER, ISLDIA, CONVCR, ITMAX - ALGEB
+ ! -- Begin Time Varying Bathymetry Inputs --
+ &TIMEBATHYCONTROL
+ NDDT    =           0,
+ BTIMINC =  0.000000000000000E+000,
+ BCHGTIMINC      =   43200.0000000000     
+ /
+ ! -- End Time Varying Bathymetry Inputs --
+ ! -- Begin SWAN Output Control Namelist --
+ &SWANOUTPUTCONTROL
+ SWAN_OUTPUTHS   = T,
+ SWAN_OUTPUTDIR  = T,
+ SWAN_OUTPUTTM01 = F,
+ SWAN_OUTPUTTPS  = T,
+ SWAN_OUTPUTWIND = F,
+ SWAN_OUTPUTTM02 = F,
+ SWAN_OUTPUTTMM10        = T
+ /
+ ! -- End SWAN Output Control Namelist --

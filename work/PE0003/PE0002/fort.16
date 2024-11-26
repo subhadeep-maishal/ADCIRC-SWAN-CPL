@@ -1,0 +1,211 @@
+
+ _______________________________________________________________________________
+
+ _______________________________________________________________________________
+
+
+                   PROGRAM ADCIRC   VERSION v53.04
+
+     AN ADVANCED CIRCULATION MODEL FOR SHELVES, COASTAL SEAS AND ESTUARIES
+
+
+       -  DEVELOPED BY
+
+          R.A. LUETTICH, JR
+            UNIVERSITY OF NORTH CAROLINA AT CHAPEL HILL
+            INSTITUTE OF MARINE SCIENCES
+
+          J.J. WESTERINK 
+            DEPARTMENT OF CIVIL ENGINEERING AND GEOLOGICAL SCIENCES
+            UNIVERSITY OF NOTRE DAME
+
+
+       -  THE ADCIRC SOURCE CODE IS COPYRIGHTED BY
+
+          R.A. LUETTICH, JR. AND J.J. WESTERINK, 1994-2006
+
+       NO PART OF THIS CODE MAY BE REPRODUCED OR REDISTRIBUTED
+          WITHOUT THE WRITTEN PERMISSION OF THE AUTHORS
+
+
+
+ _______________________________________________________________________________
+
+
+ THE ADCIRC SOURCE CODE HAS BEEN CONFIGURED BY THE PREPROCESSOR AS FOLLOWS:
+
+       - CODE SETUP TO RUN WITH 8 byte REALS
+       - CODE OPTIMIZED FOR A SCALAR COMPUTER
+
+ _______________________________________________________________________________
+INFO: openFileForRead: Searching for file to open on unit 14...
+INFO: openFileForRead: The file './PE0002/fort.14' was found. The file will be opened.
+INFO: openFileForRead: The file './PE0002/fort.14' was opened successfully.
+INFO: read14FindDims: Mesh file comment line: LULC
+INFO: read14FindDims: Reading mesh file dimensions.
+INFO: read14FindDims: Finished reading mesh file dimensions.
+INFO: read14: Reading mesh file coordinates,  connectivity, and boundary data.
+INFO: read14: Finished reading mesh file coordinates, connectivity, and boundary data.
+INFO: openFileForRead: Searching for file to open on unit 15...
+INFO: openFileForRead: The file './PE0002/fort.15' was found. The file will be opened.
+INFO: openFileForRead: The file './PE0002/fort.15' was opened successfully.
+INFO: logNameListReadStatus: The TimeBatyhControl namelist was found.
+ECHO: read_input: found_tbc_nml= T nddt=0 btiminc= 0.00000000E+00 bchgtiminc= 0.43200000E+05
+INFO: logNameListReadStatus: The SWANOutputControl namelist was found.
+ECHO: read_input: The values of SWANOutputControl are as follows:
+ECHO: read_input:  SWAN_OutputHS= T  SWAN_OutputDIR= T  SWAN_OutputTM01= F  SWAN_OutputTPS= T  SWAN_OutputWIND= F  SWAN_OutputTM02= F  SWAN_OutputTMM10= T
+INFO: logNameListReadStatus: End-of-file when searching for subdomainModeling.
+ECHO: read_input:  subdomainOn= F
+INFO: logNameListReadStatus: End-of-file when searching for metControl.
+ECHO: read_input:  WindDragLimit=  3.500000000000000E-003  DragLawString=default    rhoAir=   1.15000000000000       invertedBarometerOnElevationBoundary= F
+INFO: read_input: The tvwControl namelist was not found.
+INFO: logNameListReadStatus: End-of-file when searching for waveCoupling.
+ECHO: read_input:  WaveWindMultiplier=   1.00000000000000
+INFO: logNameListReadStatus: End-of-file when searching for wetDryControl.
+ECHO: read_input: outputNodeCode= F
+ECHO: read_input: outputNOFF= F
+ECHO: read_input: noffActive= T
+INFO: logNameListReadStatus: End-of-file when searching for inundationOutputControl.
+ECHO: read_input: inundationOutput= F
+ECHO: read_input: inunThresh= 0.60000000E+00
+INFO: logNameListReadStatus: End-of-file when searching for Smag_Control.
+ECHO: read_input:  FOUND_SMAG_NML= F SMAG_COMP_FLAG= F SMAG_UPPER_LIM= 0.10000000E+03 SMAG_LOWER_LIM= 0.10000000E-07
+INFO: logNameListReadStatus: End-of-file when searching for offsetControl.
+ECHO: read_input: offsetFileName=null
+ECHO: read_input: offsetSkipSnaps=0
+ECHO: read_input: offsetMultiplier=      1.0000000
+ECHO: read_input: offsetRampStart=      0.0000000
+ECHO: read_input: offsetRampEnd=      0.0000000
+ECHO: read_input: offsetRampReferenceTime=hotstart
+
+
+ RUN DESCRIPTION : LULC                                     ! 32 CHARACTER ALPHANUMERIC RUN DESCRIP
+
+ RUN IDENTIFICATION : ANDHRA PRADESH                           ! 24 CHARACTER ALPHANUMERIC RUN IDENTIF
+
+ _______________________________________________________________________________
+
+
+ GENERAL RUN INFORMATION
+
+     NFOVER =  1
+         IF NON-FATAL INPUT ERRORS ARE DETECTED, THEY WILL BE CORRECTED AND EXECUTION CONTINUED
+
+     NABOUT =   0
+         DETAILED OUTPUT WILL BE PROVIDED TO UNIT 16
+         UNIT 14, 15, 21, 22 INPUT DATA WILL BE ECHO PRINTED
+
+
+     NSCREEN =      1
+         SCREEN OUTPUT WILL NOT BE PROVIDED
+
+ECHO: read_input: IHOT=  0.
+INFO: read_input: ADCIRC will be cold started.
+
+     ICS =  2
+         Governing equations are in Spherical coordinates
+         mapped using a CPP projection
+  
+     IM =            0
+  
+     ADCIRC is configured for a Barotropic 2DDI 
+ run using: New GWCE and Momentum Eq formulations
+  
+      The ADCIRC logical variables are set to:
+          C2DDI            =  T
+          C3D              =  F
+          C3DDSS           =  F
+          C3DVS            =  F
+          C2D_BTrans       =  F
+          C2D_PTrans       =  F
+          C3D_PTrans       =  F
+          CBaroclinic      =  F
+          CGWCE_Lump       =  F
+          CGWCE_LS_KGQ     =  T
+          CGWCE_LS_2PartQ  =  F
+          CGWCE_LS_2PartV  =  F
+          CGWCE_LS_2PartSQ =  F
+          CGWCE_LS_2PartSV =  F
+          CGWCE_Advec_NC   =  T
+          CGWCE_Advec_C1   =  F
+          CGWCE_Advec_C2   =  F
+          CME_Orig         =  F
+          CME_New_NC       =  T
+          CME_New_C1       =  F
+          CME_New_C2       =  F
+          CME_LS_IBPQ      =  F
+          CME_LS_IBPV      =  T
+          CME_LS_IBPSQ     =  F
+          CME_LS_IBPSV     =  F
+          CME_LS_2PartQ    =  F
+          CME_LS_2PartV    =  F
+          CME_AreaInt_Orig =  F
+          CME_AreaInt_Corr =  T
+          CTIP             =  F
+          CHARMV           =  F
+
+     NOLIBF =   1
+         THE MODEL WILL USE NONLINEAR BOTTOM FRICTION
+
+     NOLIFA =   2
+         THE MODEL WILL USE FINITE AMPLITUDE TERMS AND WETTING AND DRYING
+
+     NOLICA =   0
+         THE MODEL WILL NOT USE SPATIAL DERIVATIVE COMPONENTS OF THE ADVECTIVE TERMS
+
+     NOLICAT =   0
+         THE MODEL WILL NOT USE TIME DERIVATIVE COMPONENTS 
+         OF THE ADVECTIVE TERMS IN THE GWCE
+
+     NWP =  0
+         A Nodal Attributes File (unit 13)
+         will not be used.
+
+     NCOR =  1
+         SPATIALLY VARYING CORIOLIS VALUES WILL BE COMPUTED FROM INPUT LATITUDES
+
+     NTIP =  1
+         TIDAL POTENTIAL FORCING IS USED IN THE COMPUTATION BASED ON INPUT LONGITUDES/LATITUDES
+
+     NWS =  20
+         THE GENERALIZED ASYMMETRIC VORTEX MODEL
+           ARE USED TO FORCE THE COMPUTATION
+         VALUES ARE READ IN FOR THE STORM FROM UNIT 22
+         WHICH IS CREATED FROM TEH ATCF FILE USING THE ASWIP PROGRAM
+         THE UNIT 22 FILE BEGINS AT TIME=STATIM.
+         INTERPOLATION IN TIME IS DONE TO SYNC THE STORM DATA 
+         WITH THE MODEL TIME STEP.
+
+     NRS =   3
+         WAVES WILL BE COUPLED TO SWAN!
+
+     NCICE =  0
+         ICE CONCENTRATION FIELDS ARE NOT USED TO ADJUST WIND STRESS COMPUTATIONS
+
+     NDDT =  0
+         A TIME VARYING BATHYMETRY IS NOT USED DURING THE COMPUTATION
+
+     NRAMP =  1
+         HYPERBOLIC TANGENT RAMP(S) WILL BE APPLIED TO THE FORCING FUNCTIONS
+
+
+
+     GRAVITATIONAL CONSTANT G =   9.81000
+
+
+ _______________________________________________________________________________
+
+
+ TIME INTEGRATION INFORMATION
+
+
+  ADCIRC is configured for a 2DDI run 
+  without the predictor-corrector algorithm and
+  the ADCIRC logical variable is set to:  
+          CPRECOR           =  F
+     TIME STEP =    2.000000     SECONDS
+
+     STARTING TIME FOR SIMULATION =       0.000000 DAYS
+
+     Harmonic REFERENCE TIME =       0.000000 DAYS
+
